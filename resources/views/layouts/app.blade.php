@@ -25,30 +25,43 @@
         .fa-btn {
             margin-right: 6px;
         }
+
         /* enable absolute positioning */
-        .inner-addon { 
-            position: relative; 
+        .inner-addon {
+            position: relative;
         }
 
         /* style icon */
         .inner-addon .fa {
-          position: absolute;
-          padding-top: 13px;
-          padding-right: 30px;
-          font-size: 20px;
-          pointer-events: none;
+            position: absolute;
+            padding-top: 13px;
+            padding-right: 30px;
+            font-size: 20px;
+            pointer-events: none;
         }
 
         /* align icon */
-        .left-addon .fa  { left:  0px;}
-        .right-addon .fa { right: 0px;}
+        .left-addon .fa {
+            left: 0px;
+        }
+
+        .right-addon .fa {
+            right: 0px;
+        }
 
         /* add padding  */
-        .left-addon input  { padding-left:  30px; }
-        .right-addon input { padding-right: 30px; }
+        .left-addon input {
+            padding-left: 30px;
+        }
+
+        .right-addon input {
+            padding-right: 30px;
+        }
+
         .btn-primary:hover {
             border-color: #145a96;
-        } 
+        }
+
         .tablet {
             box-shadow: 0px 0px 13px 0px rgba(82, 63, 105, 0.05);
             background-color: #ffffff;
@@ -61,13 +74,13 @@
 <body id="app-layout">
 </nav>
 
-<div style="text-align: center; margin-bottom:20px;"><a href="/login">
-    <img src="{{ asset('images/vistech-logo.png') }}" width="458px"
-                                                          alt="" style="margin-top:5em; margin-bottom:2em; margin-left: 6%" class="logo-placment"></a></div>
+<div class="container text-center"><a href="/login">
+        <img src="{{ asset('images/vistech-logo.png') }}" width="450px" alt="" style="margin-top:5em; margin-bottom:2em; width: 50%" class="logo-placment"></a>
+</div>
 
-    @yield('content')
+@yield('content')
 
-        <!-- JavaScripts -->
+<!-- JavaScripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 {{-- <script src="{{ elixir('js/app.js') }}"></script> --}}
