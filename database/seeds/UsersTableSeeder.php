@@ -22,7 +22,7 @@ class UsersTableSeeder extends Seeder
                 'external_id' => Uuid::uuid4(),
                 'name' => 'Admin',
                 'email' => 'demo@vistech.co.id',
-                'password' => bcrypt('demovistech123'),
+                'password' => bcrypt('App\Http\Controllers\SettingsController@index'),
                 'address' => '',
                 'primary_number' => null,
                 'secondary_number' => null,

@@ -21,7 +21,7 @@
                         <div class="tablet__body">
                             <p class="small">@lang('Your company\'s name')</p>
                             <br>
-                            <input name="company" type="text" class="form-control company_name" value="{{$settings->company}}" {{!$settings->company ? '' : 'disabled'}} style="">
+                            <input name="company" type="text" class="form-control company_name" value="{{$settings->company}}" style="">
                         </div>
                     </div>
                 </div>
@@ -59,8 +59,7 @@
                             <br>
                             <select class="form-control" name="language">
                                 <option value="EN">@lang("English")</option>
-                                <option value="DK" {{$settings->language == "DK" ? "selected" : ""}}>@lang("Danish")</option>
-                                <option value="ES" {{$settings->language == "ES" ? "selected" : ""}}>@lang("Spanish")</option>
+                                <option value="ID" {{$settings->language == "ID" ? "selected" : ""}}>@lang("Indonesia")</option>
                             </select>
                         </div>
                     </div>

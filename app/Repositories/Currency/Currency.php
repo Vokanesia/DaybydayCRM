@@ -43,16 +43,6 @@ class Currency
      */
     protected $symbolPlacement;
     private static $currencies = [
-        'DKK' => [
-            'code'              => 'DKK',
-            'title'             => 'Danish Krone',
-            'symbol'            => 'kr.',
-            'precision'         => 2,
-            'thousandSeparator' => '.',
-            'decimalSeparator'  => ',',
-            'symbolPlacement'   => 'after',
-            'vatPercentage'     => 2500,
-        ],
         'USD' => [
             'title'             => 'US Dollar',
             'code'              => 'USD',
@@ -63,15 +53,15 @@ class Currency
             'symbolPlacement'   => 'before',
             'vatPercentage'     => 725,
         ],
-        'EUR' => [
-            'title'             => 'Euro',
-            'code'              => 'EUR',
-            'symbol'            => '€',
+        'IDR' => [
+            'title'             => 'Indonesian Rupiah',
+            'code'              => 'IDR',
+            'symbol'            => 'Rp',
             'precision'         => 2,
             'thousandSeparator' => '.',
             'decimalSeparator'  => ',',
             'symbolPlacement'   => 'before',
-            'vatPercentage'     => 2000,
+            'vatPercentage'     => 1000,
         ]
     ];
     public function __construct($code)
