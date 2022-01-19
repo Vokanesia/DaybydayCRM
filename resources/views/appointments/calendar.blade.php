@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <title>DaybydayCRM</title>
+  <title>{{ env('APP_NAME') }}</title>
   <link rel="stylesheet" href="{{ asset(elixir('css/vendor.css')) }}">
   <link rel="stylesheet" href="{{ asset(elixir('css/app.css')) }}">
   <link href="{{ URL::asset('css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
